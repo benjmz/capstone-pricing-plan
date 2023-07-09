@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechnoBros</title>
+  <style>
+    body {
+      background-image: url('./assets/images/background.jpg');
+      color: #FBFAF5;
+      font-family: 'DM Sans', sans-serif;
+      text-align: center;
+    }
+
+    img {
+      height: 100px;
+      width: 100px;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 5rem;
+      align-items: center;
+      min-height: 80vh;
+      height: 100%;
+      flex-basis: auto;
+      margin: auto;
+      width: 90%;
+    }
+
+    #header {
+      display: flex;
+      flex-direction: row;
+      height: 10%;
+      align-items: center;
+      margin-top: 10px;
+      position: sticky;
+    }
+
+    .item {
+      align-items: center;
+      border-radius: 25px;
+      transition: all .2s ease-in-out;
+      box-shadow: 10px 10px black;
+      min-width: fit-content;
+      width: 500px;
+    }
+
+    .item:hover {
+      transform: scale(1.1);
+    }
+
+    .list {
+      list-style: none;
+      padding: 50px;
+    }
+
+    #basic {
+      background-color: #282887;
+    }
+
+    #standard {
+      background-color: #0A1879;
+    }
+
+    #premium {
+      background-color: #0e32d9;
+    }
+
+    .button {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      background-color: gold;
+    }
+
+    #footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      height: 20%;
+      margin-top: 10px;
+      margin-right: 50px
+    }
+
+    @media (max-width: 1249px) {
+      body {
+        max-width: 1249px;
+        min-width: 555px;
+      }
+
+      .container {
+        flex-direction: column;
+      }
+
+      .item {
+        width: 90%;
+      }
+
+      h4 {
+        font-size: 1.45rem;
+      }
+
+      #footer {
+        justify-content: center;
+        margin-right: 0px;
+        margin-top: 25px;
+      }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div id="header">
+      <img src="./assets/images/logo_transparent.png">
+      <h4>TechnoBros: <span>Transforming Tomorrow</span></h4>
+    </div>
+  </header>
+  <div id="wrapper">
+    <div class="container" id="content">
+      <div class="item" id="basic">
+        <ul class="list">
+          <li>
+            <h2>Basic</h2>
+          </li>
+          <li>
+            <h1>$11.99/month</h1>
+          </li>
+          <li>
+            <p>✅10GB Storage</p>
+          </li>
+          <li>
+            <p>✅1 User</p>
+          </li>
+          <li>
+            <p>🚫Support</p>
+          </li>
+          <button class="button">Sign Up</button>
+        </ul>
+      </div>
+      <div class="item" id="standard">
+        <ul class="list">
+          <li>
+            <h2>Standard</h2>
+          </li>
+          <li>
+            <h1>$19.99/month</h1>
+          </li>
+          <li>
+            <p>✅50GB Storage</p>
+          </li>
+          <li>
+            <p>✅5 Users</p>
+          </li>
+          <li>
+            <p>✅ Phone & Email Support</p>
+          </li>
+          <button class="button">Sign Up</button>
+        </ul>
+      </div>
+      <div class="item" id="premium">
+        <ul class="list">
+          <li>
+            <h2>Premium</h2>
+          </li>
+          <li>
+            <h1>$49.99/month</h1>
+          </li>
+          <li>
+            <p>✅10GB Storage</p>
+          </li>
+          <li>
+            <p>✅10 Users</p>
+          </li>
+          <li>
+            <p>✅24/7 Support</p>
+          </li>
+          <button class="button">Sign Up</button>
+        </ul>
+      </div>
+    </div>
+    <div id="footer">
+      <p>We are here for all your technological needs.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
